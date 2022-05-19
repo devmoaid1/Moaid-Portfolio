@@ -44,7 +44,7 @@ header{
     text-decoration: none;
     color: #fff;
     font-weight: 500;
-    font-size: 1.1em;
+    font-size: 1.4em;
     padding-left: 25px;
     transition: 0.7s ease;
 }
@@ -349,6 +349,7 @@ footer .social a{
 
     .navigation a{
         padding-left: 10px;
+        
       
     }
 
@@ -443,6 +444,8 @@ footer .social a{
   .about-description{
       max-width: 220px;
   }
+
+
    .about img{
      max-width: 200px;
      overflow: hidden;
