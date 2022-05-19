@@ -21,7 +21,7 @@ header{
 
 }
 
-header a{
+.logo-icon{
     padding-right: 10px;
     color: #FD057F;
     size: 10px;
@@ -45,7 +45,7 @@ header a{
     color: #fff;
     font-weight: 500;
     font-size: 1.1em;
-    padding-left: 20px;
+    padding-left: 25px;
     transition: 0.7s ease;
 }
 
@@ -63,7 +63,7 @@ section{
     width: 100%;
     display: flex;
     align-items: center;
-    background-image: url('images/background2.png');
+    background-image: url('images/background2.png') ;
     background-size: cover; 
     background-position: center;
 }
@@ -104,7 +104,6 @@ section{
 }
 .main-btn:hover{
     opacity: 1;
-    
     transform: scale(1.1)
 }
 
@@ -128,37 +127,22 @@ section{
     background-color: #1A1A1A;
     min-height: 100vh;
     width: 100%;
-    
 }
 
-.about h1{
-    display: flex;
-    justify-content: start;
-    color:#fff ;
-    font-size: 5em;
-    text-transform: uppercase;
-    font-weight: 700;
-   
-}
+
 
 .about h3{
-    font-size: 1.6em;
+  font-size: 1.6em;
+  font-weight: 800;
 }
 .about span{
-    color: #FD057F ;
+    color: #FD057F;
 }
 
-.about-wrapper{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    
-  
-}
+
 .about-description{
     font-size: 1.5em;
-    width: 50%;
+    max-width: 700px;
     text-align: justify;
     color: white;
     font-weight: 300;
@@ -209,8 +193,8 @@ section{
     background-color: #1A1A1A;
     color:white;
     width: 21.23em;
-    padding: 30px;
-    margin: 20px;
+    padding: 25px;
+    margin: 15px;
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(76, 75, 75, 0.1);
     transition: 0.8s ease;
@@ -220,10 +204,9 @@ section{
 }
 
 .icon{
-    font-size: 5em;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 20px;
+    font-size: 8em;
+    text-align: center;
+    margin-bottom: 10px;
     color: #FD057F;
 }
 .info{
@@ -233,7 +216,7 @@ section{
     align-items: center;
 }
 .info h3{
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-weight: 700;
     margin: 10px;
     color: white;
@@ -284,7 +267,8 @@ section{
 }
 .project-category{
     font-size: 0.8em;
-    max-height: 20px;
+    text-align: justify;
+    height: 40px;
 }
 .project-title{
     display: flex;
@@ -309,13 +293,13 @@ section{
 }
 .tech-icon{
     display: inline-block;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 700;
     color: #FD057F;
     margin-right: 10px;
 }
 .tech-stack{
-    font-size: 1.2em;
+    font-size: 1em;
 }
 .dot{
     color: #FD057F;
@@ -327,29 +311,17 @@ section{
 
 .contact{
     background-color: #101010;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
 }
 
-.contact-card{
-    background-color: #1A1A1A;
-    color:white;
-    width: 32.23em;
-    padding: 30px;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(76, 75, 75, 0.1);
-    transition: 0.8s ease;
-}
-.contact-card:hover{
-    transform: scale(1.1);
-}
+
 
 footer{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 20px;
+    padding: 2em;
     background-color: #1A1A1A;
 }
 
@@ -360,20 +332,23 @@ footer span{
 }
 
 footer h3{
+    font-size: 1.3em;
     font-weight: 600;
-   
     color: #fff;
-
+}
+footer .social a{
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
 }
 
-@media (max-width:1023){
+@media (max-width:1023px){
    
     header{
-        padding: 5px 10px ;
+        padding: 12px 5px ;
     }
 
-    header a{
-        padding-right: 5px;
+    .navigation a{
+        padding-left: 10px;
     }
 
     .title{
@@ -381,7 +356,7 @@ footer h3{
     }
 
     section{
-     padding: 80px 20px ;
+     padding: 80px 10px ;
     }
     .main{
         flex-direction: column;
@@ -408,10 +383,53 @@ footer h3{
         font-size: 12px;
     }
 
+    .card {
+        padding: 10px;
+    }
+
+    .project-card{
+        width: 23em;
+        min-height: 18em;
+    }
+    
+
 }
 
 @media (max-width:300px) {
+
+    .about h3{
+        font-size: 1.3em;
+        font-weight: 800;
+      }
     body{
         font-size: 10px;
     }
+    .card {
+        padding: 10px;
+    }
+  .about-description{
+      max-width: 220px;
+  }
+   .about img{
+     max-width: 200px;
+     overflow: hidden;
+   }
+
+   footer h3{
+       font-size: 1em;
+   }
+
+   footer .social a{
+    font-size: 1.2em;
+    padding: 0 10px 0 0;
 }
+.project-card{
+    width: 22em;
+    min-height: 12em;
+}
+.project-category{
+    height: 30px;
+}
+
+
+   }
