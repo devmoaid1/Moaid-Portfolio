@@ -380,7 +380,12 @@ footer .social a{
 
 @media (max-width:641px) {
     body{
-        font-size: 12px;
+        font-size: 11px;
+    }
+
+   
+    .navigation a{
+       font-size: 0.8em;
     }
 
     .card {
@@ -391,12 +396,39 @@ footer .social a{
         width: 23em;
         min-height: 18em;
     }
+    footer h3{
+        font-size: 1em;
+    }
+ 
+    footer .social a{
+     font-size: 1.2em;
+     padding: 0 10px 0 0;
+ }
+
+ .project-card{
+    width: 22em;
+    min-height: 12em;
+}
+.project-category{
+    height: 30px;
+}
+.about-description{
+    max-width: 300px;
+}
+.about img{
+    max-width: 300px;
+    overflow: hidden;
+  }
     
 
 }
 
-@media (max-width:300px) {
+@media (max-width:300px){
 
+    header{
+        justify-content: space-evenly;
+    }
+    
     .about h3{
         font-size: 1.3em;
         font-weight: 800;
@@ -415,21 +447,8 @@ footer .social a{
      overflow: hidden;
    }
 
-   footer h3{
-       font-size: 1em;
-   }
+   
 
-   footer .social a{
-    font-size: 1.2em;
-    padding: 0 10px 0 0;
-}
-.project-card{
-    width: 22em;
-    min-height: 12em;
-}
-.project-category{
-    height: 30px;
-}
 
 
    }
