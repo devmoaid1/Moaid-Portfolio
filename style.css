@@ -69,8 +69,8 @@ section{
 }
 
 .main h2{
-    font-size: 1.3em;
-    font-weight: 300;
+    font-size: 1.5em;
+    font-weight: 500;
     color: white;
 }
 .main h3{
@@ -78,7 +78,7 @@ section{
     font-weight: 500;
     font-size: 2em;
     margin-top: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     color: white;
 }
 .main span{
@@ -92,7 +92,7 @@ section{
 .main-btn{
     display: inline-block;
     opacity: 0.9;
-    margin-bottom:30px ;
+    margin-bottom:40px ;
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 600;
@@ -341,8 +341,27 @@ footer .social a{
     padding: 0 12px 0 0;
 }
 
+
+@media(min-width:1920px){
+    body{
+        font-size: 25px;
+    }
+    .about img{
+        width: 700px;
+    }
+    .about-description{
+        max-width: 800px;
+    }
+    /* .navigation a{
+        font-size: 2em ;
+    } */
+}
+
 @media (max-width:1023px){
    
+    body{
+        font-size: 11px;
+    }
     header{
         padding: 12px 5px ;
     }
@@ -381,9 +400,7 @@ footer .social a{
 }
 
 @media (max-width:641px) {
-    body{
-        font-size: 11px;
-    }
+    
 
    
     .navigation a{
